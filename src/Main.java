@@ -7,11 +7,9 @@ public class Main {
         queue.Enqueue("third");
         queue.Enqueue("fourth");
 
-        System.out.println(queue.Contains("first"));
-
-        queue.Dequeue();
-
-        System.out.println(queue.Contains("first"));
+        for(var el: queue){
+            System.out.println(el);
+        }
     }
 }
 

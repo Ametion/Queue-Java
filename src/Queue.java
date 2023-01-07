@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public class Queue<T>{
+public class Queue<T> implements Iterable<T>{
     private LinkedList<T> queue = new LinkedList<>();
 
     public void Enqueue(T data){
@@ -33,6 +33,10 @@ public class Queue<T>{
 
     public Boolean Contains(T data){
         return queue.Contains(data);
+    }
+
+    public Iterator<T> iterator() {
+        return queue.iterator();
     }
 }
 
